@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative materials</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 220px;
+            background-color: #343a40;
+            color: white;
+            padding: 25px 15px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffc107;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+        .product-card {
+            max-width: 320px;
+            margin: 30px auto;
+            padding: 15px;
+            border: 2px solid #ddd;
+            background-color: white;
+            border-radius: 12px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            color: #555;
+            line-height: 1.5;
+        }
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .buy-btn {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-btn:hover {
+            background-color: #0b5ed7;
+        }
+        .blog-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .blog-card {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .blog-card h3 {
+            margin-bottom: 15px;
+        }
+        .blog-card p {
+            color: #555;
+            line-height: 1.5;
+        }
+        .read-btn {
+            background-color: white;
+            color: #0d6efd;
+            border: 1px solid #0d6efd;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .read-btn:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: auto;
+                text-align: center;
+            }
+            .sidebar a {
+                display: inline-block;
+                margin: 5px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .blog-container {
+                flex-direction: column;
+            }
+            .product-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h2>JumpZone</h2>
+        <a href="#">Home</a>
+        <a href="#products">Trampoline Mats</a>
+        <a href="#">Safety Equipment</a>
+        <a href="#">Foam Pit</a>
+        <a href="#">Safety Nets</a>
+        <a href="#blogs">Blogs</a>
+    </aside>
+    <main class="content">
+        <h1 style="text-align: center; margin-bottom: 30px;">
+            Improve Your Creativity
+        </h1>
+        <div class="product-card" id="products">
+            <img
+                src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80"
+                alt="Trampoline Park"
+            >
+            <div>
+                <h3>
+                    Professional Trampoline Mat
+                </h3>
+                <p>
+                    A strong and durable trampoline mat designed
+                    for trampoline parks. It provides good bounce,
+                    comfort and long-lasting performance.
+                </p>
+                <h4 class="price">
+                    ₹8,999
+                </h4>
+                <button class="buy-btn">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+        <h2 style="text-align: center; margin-top: 50px;">
+            Trampoline Park Blogs
+        </h2>
+        <div class="blog-container" id="blogs">
+            <div class="blog-card">
+                <h3>
+                    Trampoline Safety
+                </h3>
+                <p>
+                    Learn about important safety equipment
+                    used in trampoline parks.
+                </p>
+                <button class="read-btn">
+                    Read More
+                </button>
+            </div>
+            <div class="blog-card">
+                <h3>
+                    Choosing the Right Mat
+                </h3>
+                <p>
+                    Know what things should be checked before
+                    selecting a trampoline mat.
+                </p>
+                <button class="read-btn">
+                    Read More
+                </button>
+            </div>
+            <div class="blog-card">
+                <h3>
+                    Trampoline Park Design
+                </h3>
+                <p>
+                    Learn about different materials used to
+                    create a safe and exciting trampoline park.
+                </p>
+                <button class="read-btn">
+                    Read More
+                </button>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
